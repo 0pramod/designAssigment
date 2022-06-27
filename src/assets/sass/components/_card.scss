@@ -30,13 +30,11 @@
 
     @include e(name) {
 
-      
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: getFontSize("caption");
         text-align: center;
-        color: #FFFFFF;
+        color: $white;
     }
 
     @include m(green) {
