@@ -9,7 +9,7 @@
   gap: 10px;
 
   @include m(black){
-    background:$black;   
+    background:getColor('black.base');   
   }
   @include m(green) {
     background: $green;
@@ -24,7 +24,7 @@
       font-style: normal;
       font-weight: normal;
       font-size: getFontSize("caption");
-      color: $white;
+      color: getColor('white.base');
   }
   @include m(light){
     border: 1px solid getColor("grey.borderGray");

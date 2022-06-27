@@ -1,56 +1,66 @@
 .card {
+    position: relative;
     flex-direction: column;
-    align-items: center;
-    padding: 0px 10px;
-    gap: 10px;
-    margin: 32px;
-    position: relative;
-    width: 346px;
-    height: min-content;
+    padding: 16px 15px; 
+    background: getColor("white.base");
+    border: 1px solid getColor("white.light");
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
 
-    background: #F8F8F9;
-    border: 1px solid #E4E4E4;
-    border-radius: 0px 0px 6px 6px;
-
-    @include m(bg-transparent) {
-        background: transparent;
-        border: transparent;
-    }
-}
-
-.status {
-    position: relative;
-    width: 348px;
-    height: 50px;
-    left: calc(50% - 348px/2);
-    top: 0px;
-    margin-bottom: 10px;
-    padding:20px;
-    border-radius: 6px 6px 0px 0px;
-
-    @include e(name) {
-
+    @include e(containts){
+        display:flex;
+        margin:5px;
+        padding: 3px 0px;
+        color: getColor('blue.light');
         font-style: normal;
-        font-weight: bold;
-        font-size: getFontSize("caption");
-        text-align: center;
-        color: $white;
+        font-weight: normal;
+        font-size: getFontSize('small');
+       
+        @include e(image) {
+            width: 14px;
+            height:14px;
+            margin-right: 5px;
+            }
+        
+        @include e(links) {
+            text-decoration-line: underline;
+            color: getColor('blue.light');
+            
+        }
+       
     }
 
-    @include m(green) {
-        background: #106354;
+    @include e(heading) {
+        margin: 10px 0px;
+        padding:10px 0px;
+        gap:23px;
+        font-weight: medium;
+        font-size: getFontSize('body3');
+        color: getColor('black.base');
+        display:flex;
+        flex-direction: row;
+        @include e(title){
+            width: 231px;
+            top: 0px;
+            font-weight: medium;
+            font-size: getFontSize('body3');
+            color: getColor('black.base');
+        }
+        @include e (date){
+                font-style: normal;
+                font-weight: normal;
+                font-size: getFontSize("small");
+                white-space: nowrap;
+                color: getColor('blue.light2');
+                mix-blend-mode: normal;
+                opacity: 0.6;
+        }
     }
-
-    @include m(purple) {
-        background: #54117D;
+    @include e(description) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: getFontSize('caption');
+        margin: 5px 0px;
+        color: getColor("blue.light");
     }
-
-    @include m(brown) {
-        background: #71441B;
-    }
-
-    @include m(gray) {
-        background: #6E6D6D;
-    }
-
 }
