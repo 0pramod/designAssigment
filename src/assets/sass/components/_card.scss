@@ -1,0 +1,58 @@
+.card {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    margin: 32px;
+    position: relative;
+    width: 346px;
+    height: min-content;
+
+    background: #F8F8F9;
+    border: 1px solid #E4E4E4;
+    border-radius: 0px 0px 6px 6px;
+
+    @include m(bg-transparent) {
+        background: transparent;
+        border: transparent;
+    }
+}
+
+.status {
+    position: relative;
+    width: 348px;
+    height: 50px;
+    left: calc(50% - 348px/2);
+    top: 0px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 6px 6px 0px 0px;
+
+    @include e(name) {
+
+      
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    @include m(green) {
+        background: #106354;
+    }
+
+    @include m(purple) {
+        background: #54117D;
+    }
+
+    @include m(brown) {
+        background: #71441B;
+    }
+
+    @include m(gray) {
+        background: #6E6D6D;
+    }
+
+}

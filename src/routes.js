@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Assignment from "./components/assignment";
 
-import Kit from './components/kit';
-import Landing from './components/landing';
-
+import Kit from "./components/kit";
+// import Landing from "./components/landing";
 
 /**
  * App Router.
@@ -11,8 +11,8 @@ import Landing from './components/landing';
 function AppRouter() {
   return (
     <Router>
-        <Route path="/" exact component={Landing} />
-        <Route path="/docs" component={Kit} />
+      <Route path="/" exact component={Assignment} />
+      <Route path="/docs" component={Kit} />
     </Router>
   );
 }

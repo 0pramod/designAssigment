@@ -52,12 +52,28 @@ html.full-height {
 }
 
 body {
+  padding: 10px;
   -webkit-font-smoothing: antialiased;
   color: $black;
   font-family: $font-primary;
   font-size: $base__font-size;
   text-rendering: optimizeLegibility;
   line-height: $base__body__line;
+}
+
+
+.page-container {
+  position: absolute;
+  padding: 50px 42px;
+  border-radius: 20px;
+  display: flex;
+  
+}
+.heading {
+position: relative;
+top:50px;
+left:40px;
+  color: #2B3744;
 }
 
 a {

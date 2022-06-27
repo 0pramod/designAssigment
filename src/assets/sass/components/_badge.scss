@@ -1,12 +1,44 @@
 .badge{
-  border-radius: 12px;
+  border-radius: 4px;
+  width:min-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include m(tiny){
+  flex-direction: row;
+  padding: 2px 4px;
+  gap: 10px;
+
+
+  @include m(second){
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    
     height: 20px;
     @include getFontSize("body14");
     font-weight: 700;
+  }
+  @include m(black){
+    background:$black;   
+  }
+  @include m(green) {
+    background: $green;
+  }
+  @include m(blue) {
+    background: #4765B0;
+  }
+    @include m(brown) {
+      background: #CB9647;
+    }
+  @include e(os){
+     
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: $white;
   }
   @include m(light){
     border: 1px solid getColor("grey.borderGray");
