@@ -1,0 +1,28 @@
+.main-container{
+ display:flex;
+ flex-direction: column;
+ background: getColour('white.base');  
+ gap:50px;
+ 
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    justify-content: space-between;
+    
+    
+}
+
+.title {
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #000000;
+}
