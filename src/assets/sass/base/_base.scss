@@ -52,7 +52,7 @@ html.full-height {
 }
 
 body {
-  padding: 10px;
+  // padding: 10px;
   -webkit-font-smoothing: antialiased;
   color: $black;
   font-family: $font-primary;
@@ -71,10 +71,10 @@ body {
   
 }
 .page-contains{
-  padding: 20px;
+  // padding: 20px;
   display: flex;
   flex-direction: row;
-  gap:60px;
+  gap:40px;
   
   
 }
