@@ -1,7 +1,7 @@
 .card {
     position: relative;
     flex-direction: column;
-    
+     width:max-content;
     padding: 20px; 
     // background: getColor("white.base");
     // border: 1px solid getColor("white.light");
@@ -136,7 +136,6 @@
 }
 
 .form-contains{
-  
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -152,7 +151,6 @@
 } 
 .form-contains select {
     background: transparent;
-    
     border-color: transparent ;
    
 }

@@ -44,7 +44,7 @@ const MainContainer = () => {
       </div>
       <div className="container">
         <div className="card card--flex-column">
-          <p className="title">Transaction</p>
+          <p className="title title--m">Transaction</p>
 
           <div className="lists lists--gap">
             <div className="lists__title">
@@ -105,7 +105,7 @@ const MainContainer = () => {
         </div>
         <div className="card">
           <div className="lists">
-            <p className="title">Activity</p>
+            <p className="title title--m">Activity</p>
             <form className="form-contains">
               <select name="date">
                 <option value="">2021</option>

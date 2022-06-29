@@ -41,7 +41,11 @@
 .menu{
     display: flex;
     flex-direction: row;
-    gap:14px;
+    width: 200px;
+    align-items: center;
+        padding: 10px 0px 10px 10px;
+        gap: 12px;
+    // gap:14px;
     
     @include e(icon){
         width:24px;
@@ -52,6 +56,10 @@
         font-size: 16px;
         line-height: 22px;
         color: getColour('black.base');
+    }
+    @include m(active){
+        border-radius: 9px;
+        background: #F7F7F7
     }
    
 }

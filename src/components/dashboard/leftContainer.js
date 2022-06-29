@@ -19,7 +19,7 @@ const LeftContainer = () => {
         <p className="profile__name"> Hi, Przemek</p>
       </div>
       <div className="side-bar">
-        <div className="menu">
+        <div className="menu menu--active">
           <img className="menu__icon" src={dashboard} alt="icon"></img>
           <p className="menu__name">Dashboard</p>
         </div>

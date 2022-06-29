@@ -16,11 +16,13 @@
 }
 
 .title {
-
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 27px;
-
     color: #000000;
+    @include m(m){
+        font-size: 18px;
+            line-height: 25px;
+    }
 }

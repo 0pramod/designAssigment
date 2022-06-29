@@ -52,9 +52,10 @@ html.full-height {
 }
 
 body {
-  // padding: 10px;
+   padding: 10px;
   -webkit-font-smoothing: antialiased;
   color: $black;
+  // font-family: 'Manrope';
   font-family: $font-primary;
   font-size: $base__font-size;
   text-rendering: optimizeLegibility;
@@ -72,6 +73,8 @@ body {
 }
 .page-contains{
   // padding: 20px;
+  // width: min-content;
+    // height: 1200px;
   display: flex;
   flex-direction: row;
   gap:40px;
