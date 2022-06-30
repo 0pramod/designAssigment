@@ -1,5 +1,7 @@
 .main-container{
  display:flex;
+//  width:1000px;
+//  overflow: auto;
  flex-direction: column;
  background: getColour('white.base');  
  gap:10px;

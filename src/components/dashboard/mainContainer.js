@@ -103,7 +103,7 @@ const MainContainer = () => {
             <div className="lists__price">+ ¥234.00</div>
           </div>
         </div>
-        <div className="card">
+        <div className="card card--image">
           <div className="lists">
             <p className="title title--m">Activity</p>
             <form className="form-contains">
