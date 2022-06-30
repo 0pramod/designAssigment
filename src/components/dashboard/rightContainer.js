@@ -44,7 +44,9 @@ const RightContainer = () => {
                 <p className="lists__title__description__date">12, Jan, 2022</p>
               </div>
             </div>
-            <div className="lists__blue">change</div>
+            <a href=" " className="lists__blue">
+              change
+            </a>
           </div>
           <div className="lists lists--bg-gray">
             <div className="lists__title">

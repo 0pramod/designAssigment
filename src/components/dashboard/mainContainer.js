@@ -43,17 +43,16 @@ const MainContainer = () => {
         </div>
       </div>
       <div className="container">
-        <div className="card card--flex-column">
-          <p className="title title--m">Transaction</p>
-
+        <div className="card ">
+          <p className="title title--m ">Transaction</p>
           <div className="lists lists--gap">
             <div className="lists__title">
               <img className="lists__title__image" src={flower} alt=""></img>
               <div className="lists__title__description">
-                <p className="lists__title__description__name">
+                <a href=" #" className="lists__title__description__name">
                   {" "}
                   Belle Incentive
-                </p>
+                </a>
                 <p className="lists__title__description__date">12 Jan, 2022</p>
               </div>
             </div>
@@ -63,7 +62,10 @@ const MainContainer = () => {
             <div className="lists__title">
               <img className="lists__title__image" src={gopro} alt=""></img>
               <div className="lists__title__description">
-                <p className="lists__title__description__name"> GoPro</p>
+                <a href=" #" className="lists__title__description__name">
+                  {" "}
+                  GoPro
+                </a>
                 <p className="lists__title__description__date">13 Jan, 2022</p>
               </div>
             </div>
@@ -73,7 +75,10 @@ const MainContainer = () => {
             <div className="lists__title">
               <img className="lists__title__image" src={pg} alt=""></img>
               <div className="lists__title__description">
-                <p className="lists__title__description__name"> P&G Rewards</p>
+                <a href=" #" className="lists__title__description__name">
+                  {" "}
+                  P&G Rewards
+                </a>
                 <p className="lists__title__description__date">21 Feb, 2022</p>
               </div>
             </div>
@@ -83,7 +88,10 @@ const MainContainer = () => {
             <div className="lists__title">
               <img className="lists__title__image" src={nasa} alt=""></img>
               <div className="lists__title__description">
-                <p className="lists__title__description__name"> Nasa</p>
+                <a href=" #" className="lists__title__description__name">
+                  {" "}
+                  Nasa
+                </a>
                 <p className="lists__title__description__date">23 Mar, 2022</p>
               </div>
             </div>
@@ -93,10 +101,10 @@ const MainContainer = () => {
             <div className="lists__title">
               <img className="lists__title__image" src={md} alt=""></img>
               <div className="lists__title__description">
-                <p className="lists__title__description__name">
+                <a href=" #" className="lists__title__description__name">
                   {" "}
                   Macdonald Cashback
-                </p>
+                </a>
                 <p className="lists__title__description__date">30 May, 2022</p>
               </div>
             </div>
@@ -104,7 +112,7 @@ const MainContainer = () => {
           </div>
         </div>
         <div className="card card--image">
-          <div className="lists">
+          <div className="lists lists--no-padding">
             <p className="title title--m">Activity</p>
             <form className="form-contains">
               <select name="date">
@@ -114,7 +122,7 @@ const MainContainer = () => {
             </form>
           </div>
           <div className="lists">
-            <img src={graph} alt=""></img>
+            <img className="card__image" src={graph} alt=""></img>
           </div>
         </div>
       </div>

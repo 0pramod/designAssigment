@@ -1,15 +1,18 @@
 .card {
     position: relative;
     flex-direction: column;
-     
-    padding: 20px; 
+     margin:10px;
+    // padding: 20px; 
     // background: getColor("white.base");
     // border: 1px solid getColor("white.light");
     // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
      border-radius: 17px;
      
      @include m(image){
-        padding:0px;
+        margin:0px;
+     }
+     @include m(image){
+        margin:0px;
      }
     @include e(icon){
       margin-right: 24px;;
@@ -98,10 +101,14 @@
             line-height: 16px;
             color: #1D70E1;
     }
-
+   
     @include m(gap){
         gap:60px;
     }
+       @include m(no-padding){
+        padding-top: 0%;
+        ;
+       }
     @include m(bg-gray){
         margin-top:10px ;
         background: #FAFAFA;

@@ -6,7 +6,7 @@
     // width:260px;
     height: 100%;
     position: sticky;
-    // border-right: 1px solid #000000 ;
+   
     
 }
 .profile{
@@ -46,7 +46,9 @@
 .menu{
     display: flex;
     flex-direction: row;
-    width: 200px;
+    margin-right: 30px;
+    width: 185px;
+    border-radius: 9px;
     align-items: center;
         padding: 10px 0px 10px 10px;
         gap: 12px;
@@ -60,17 +62,20 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: getColour('black.base');
+        color: black;
     }
     @include m(active){
-        border-radius: 9px;
+        
         background: #F7F7F7
     }
    
 }
-
+.menu:hover {
+    cursor: pointer;
+    background: #fde4e4;
+}
 .vertical-line{
 opacity: 0.1;
-    border: 1px solid #000000;
+    border-right: 1px solid #000000;
     // transform: rotate(90deg);
 }

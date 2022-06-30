@@ -21,32 +21,46 @@ const LeftContainer = () => {
       <div className="side-bar">
         <div className="menu menu--active">
           <img className="menu__icon" src={dashboard} alt="icon"></img>
-          <p className="menu__name">Dashboard</p>
+          <a href=" " className="menu__name">
+            Dashboard
+          </a>
         </div>
         <div className="menu">
           <img className="menu__icon" src={transaction} alt="icon"></img>
-          <p className="menu__name">Transaction</p>
+          <a href=" #" className="menu__name">
+            Transaction
+          </a>
         </div>
         <div className="menu">
           <img className="menu__icon" src={statistics} alt="icon"></img>
-          <p className="menu__name">Statistics</p>
+          <a href=" #" className="menu__name">
+            Statistics
+          </a>
         </div>
         <div className="menu">
           <img className="menu__icon" src={card} alt="icon"></img>
-          <p className="menu__name">Card</p>
+          <a href=" #" className="menu__name">
+            Card
+          </a>
         </div>
         <div className="menu">
           <img className="menu__icon" src={profile} alt="icon"></img>
-          <p className="menu__name">Profile</p>
+          <a href=" #" className="menu__name">
+            Profile
+          </a>
         </div>
         <div className="menu">
           <img className="menu__icon" src={settings} alt="icon"></img>
-          <p className="menu__name">Settings</p>
+          <a href=" #" className="menu__name">
+            Settings
+          </a>
         </div>
         <hr className="line"></hr>
         <div className="menu">
           <img className="menu__icon" src={logout} alt="icon"></img>
-          <p className="menu__name">Log out</p>
+          <a href=" #" className="menu__name">
+            Log out
+          </a>
         </div>
       </div>
     </div>
