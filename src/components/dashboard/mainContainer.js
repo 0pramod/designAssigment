@@ -31,10 +31,10 @@ const MainContainer = () => {
         </div>
       </div>
       <div className="container">
-        <div className="card">
+        <div className="card card--shadow">
           <img src={PurpleCard} alt=""></img>
         </div>
-        <div className="card">
+        <div className="card card--shadow">
           {" "}
           <img src={BlueCard} alt=""></img>
         </div>

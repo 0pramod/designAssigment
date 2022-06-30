@@ -82,7 +82,7 @@ const RightContainer = () => {
             </form>
           </div>
           <div className="lists">
-            <button className="btn btn--green">Send Money</button>
+            <button className="btn btn--green btn--quiz">Send Money</button>
           </div>
         </div>
       </div>
