@@ -23,7 +23,7 @@ const MainContainer = () => {
         <div className="lists">
           <div className="search">
             <img className="search__icon" src={search} alt=""></img>
-            <p> Search</p>
+            <input className="search__input" placeholder="Search"></input>
           </div>
           <div className="card ">
             <img className="card__icon" src={inbox} alt=""></img>
@@ -39,8 +39,10 @@ const MainContainer = () => {
           {" "}
           <img src={BlueCard} alt=""></img>
         </div>
-        <div className="card">
-          <img src={AddCard} alt=""></img>
+
+        <div className="card card--add-card">
+          <img className="card--add-card__icon" src={add} alt=""></img>
+          <p className=" card--add-card__name">Add Card</p>
         </div>
       </div>
       <div className="container">
