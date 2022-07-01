@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding:20px;
-    gap:50px;
+    // gap:50px;
     // width:260px;
     height: 100%;
     position: sticky;
@@ -12,6 +12,7 @@
 .profile{
     display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
         gap:21px;
     @include e(image){
         width: 64px;
@@ -46,8 +47,9 @@
 .menu{
     display: flex;
     flex-direction: row;
-    margin-right: 30px;
+    // margin-right: 30px;
     width: 185px;
+    height:44px;
     border-radius: 9px;
     align-items: center;
         padding: 10px 0px 10px 10px;
@@ -69,11 +71,15 @@
         background: #F7F7F7
     }
    
+    &:hover{
+cursor: pointer;
+    background: #F7F7F7;
+    }
+    & a{
+        color: black;
+    }
 }
-.menu:hover {
-    cursor: pointer;
-    background: #fde4e4;
-}
+
 .vertical-line{
 opacity: 0.1;
     border-right: 1px solid #000000;

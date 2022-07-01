@@ -114,7 +114,7 @@ const MainContainer = () => {
         <div className="card card--image">
           <div className="lists lists--no-padding">
             <p className="title title--m">Activity</p>
-            <form className="form-contains">
+            <form className="form-contains form-contains--date">
               <select name="date">
                 <option value="">2021</option>
                 <option value="">2022</option>

@@ -16,7 +16,7 @@ const RightContainer = () => {
       <div className="card">
         <div className="lists">
           <p className="title">All Expenses</p>
-          <form className="form-contains">
+          <form className="form-contains form-contains--time">
             <select name="Time">
               <option value="">Monthly</option>
               <option value="">Yearly</option>
@@ -59,7 +59,7 @@ const RightContainer = () => {
                 <p className="lists__title__description__name"> Credit</p>
               </div>
             </div>
-            <form className="form-contains">
+            <form className="form-contains form-contains--money">
               <select name="money">
                 <option value="">¥890.00</option>
                 <option value="">¥890.00</option>
@@ -74,7 +74,7 @@ const RightContainer = () => {
                 <p className="lists__title__description__date">¥ 890.00</p>
               </div>
             </div>
-            <form className="form-contains">
+            <form className="form-contains form-contains--currency">
               <select name="money">
                 <option value="">YEN</option>
                 <option value="">RS</option>
@@ -82,7 +82,7 @@ const RightContainer = () => {
             </form>
           </div>
           <div className="lists">
-            <button className="btn btn--green btn--quiz">Send Money</button>
+            <button className="button">Send Money</button>
           </div>
         </div>
       </div>
