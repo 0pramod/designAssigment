@@ -26,3 +26,30 @@
             background:orange;
         }
 }
+
+.text-small{
+ 
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px; 
+        color: #000000;
+
+}
+
+.dot{
+    width: 11px;
+        height: 11px;
+        margin-right: 6px;
+        border-radius: 30px;
+        flex: none;
+        @include m(yellow){
+            background: #FFCA28;
+        }
+        @include m(orange){
+            background: #EC6F48;
+        }
+        @include m(purple){
+            background: #836CDA;
+        }
+}

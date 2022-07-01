@@ -8,6 +8,7 @@ import {
   pg,
   nasa,
   md,
+  add,
   AddCard,
   graph,
   search,
@@ -26,7 +27,7 @@ const MainContainer = () => {
           </div>
           <div className="card ">
             <img className="card__icon" src={inbox} alt=""></img>
-            <img src={notification} alt=""></img>
+            <img className="card__icon" src={notification} alt=""></img>
           </div>
         </div>
       </div>

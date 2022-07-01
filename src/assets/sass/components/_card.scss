@@ -7,6 +7,20 @@
     // border: 1px solid getColor("white.light");
     // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
      border-radius: 17px;
+     @include m(blue){
+            color:white;
+            width: 280px;
+            height: 94px;
+            background: #3B3659;
+            border-radius: 17px;
+            padding: 20px;
+            
+     }
+    
+     @include e(icon){
+        width: 24px;
+            height: 24px;
+     }
      
      @include m(shadow){
        
@@ -17,9 +31,10 @@
       margin-right: 24px;;
     }
     @include m(bg-white){
-        
+        width: 280px;
         background: white;
-        width:260px;
+        // width:260px;
+        padding:20px;
     }
     @include m(right){
         justify-content: space-between;
@@ -92,6 +107,22 @@
     align-items: center;
     padding: 10px;
     white-space: nowrap;
+    @include m(no-padding){
+        padding: 0px;
+    }
+    @include e(image){
+        padding: 20px;
+    }
+    @include m(small){
+        font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 0px;
+            gap:5px;
+            color: #FFFFFF;
+            
+    }
    
     @include e(blue){
         font-style: normal;
@@ -126,15 +157,29 @@
         flex-direction: row;
         gap:10px;
         align-items: center;
+        @include m(bg){
+            font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 33px;
+                color: #FFFFFF;
+        }
         @include e(description){
             display: flex;
             flex-direction: column;
+            gap:2px;
             @include e(name){                
                 font-style: normal;
                 font-weight: bold;
                 font-size: 14px;
                 line-height: 19px;
                 color:getColor('black.base');
+                @include m(bg){
+                    font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                }
 
                 }
                 @include e(date){

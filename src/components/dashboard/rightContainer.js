@@ -1,16 +1,35 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { Avatar2, balance, chart, creditCard } from "../../assets/images.js";
+import {
+  Avatar2,
+  balance,
+  chart,
+  creditCard,
+  statistics,
+  lines,
+  up,
+  donut,
+} from "../../assets/images.js";
 const RightContainer = () => {
   return (
     <div className="right-container">
       <div className="card">
         <div className="lists">
           <p className="title">Account</p>
-          <form> </form>
         </div>
-        <div className="lists">
-          <img src={balance} alt=""></img>
+        <div className="card card--blue">
+          <div className="lists lists--no-padding">
+            <p>Balance</p>
+            <img src={lines} alt=""></img>
+          </div>
+          <div className="lists lists--no-padding">
+            <p className="lists__title--bg">¥ 109.00</p>
+            <div className="lists lists--small">
+              <img src={up} alt=""></img>
+              <p>4.5%</p>
+            </div>
+          </div>
+          <div className="lists"></div>
         </div>
       </div>
       <div className="card">
@@ -23,8 +42,55 @@ const RightContainer = () => {
             </select>
           </form>
         </div>
-        <div className="lists">
-          <img src={chart} alt=""></img>
+
+        <div className="card card--bg-white">
+          <div className="lists ">
+            <div className="lists__title">
+              <div className="lists__title__description">
+                <p className="lists__title__description__date">Daily</p>
+                <p className="lists__title__description__name lists__title__description__name--bg ">
+                  {" "}
+                  ¥ 450.00
+                </p>
+              </div>
+            </div>
+            <div className="lists__title">
+              <div className="lists__title__description">
+                <p className="lists__title__description__date">Weekly</p>
+                <p className="lists__title__description__name lists__title__description__name--bg">
+                  {" "}
+                  ¥ 879.00
+                </p>
+              </div>
+            </div>
+            <div className="lists__title">
+              <div className="lists__title__description">
+                <p className="lists__title__description__date">¥ Monthly</p>
+                <p className="lists__title__description__name lists__title__description__name--bg">
+                  {" "}
+                  ¥ 234.00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lists">
+            <img className="lists__image" src={donut} alt=""></img>
+          </div>
+          <div className="lists lists--no-padding">
+            <div className="lists lists--no-padding">
+              <div className="dot dot--yellow"></div>
+              <p className="text-small"> Shopping</p>
+            </div>
+            <div className="lists lists--no-padding">
+              <div className="dot dot--orange"></div>
+              <p className="text-small"> Workspace</p>
+            </div>
+            <div className="lists lists--no-padding">
+              <div className="dot dot--purple"></div>
+              <p className="text-small"> Platform</p>
+            </div>{" "}
+          </div>
         </div>
       </div>
       <div className="card">

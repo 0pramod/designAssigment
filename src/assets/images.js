@@ -27,6 +27,10 @@ import search from "./images/search.svg";
 import settings from "./images/settings.svg";
 import statistics from "./images/statistics.svg";
 import transaction from "./images/transaction.svg";
+import add from "./images/add.svg";
+import lines from "./images/lines.svg";
+import up from "./images/up.svg";
+import donut from "./images/donut.png";
 export {
   logo,
   tick,
@@ -57,4 +61,8 @@ export {
   pg,
   graph,
   Avatar2,
+  add,
+  lines,
+  up,
+  donut,
 };
